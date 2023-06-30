@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu
 MAINTAINER Sergio Gómez <sergio@quaip.com>
 
 # Keep upstart from complaining
@@ -38,4 +38,3 @@ RUN chmod 755 /start.sh /etc/apache2/foreground.sh
 
 EXPOSE 22 80
 CMD ["/bin/bash", "/start.sh"]
-
